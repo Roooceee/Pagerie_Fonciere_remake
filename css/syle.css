@@ -1,0 +1,540 @@
+/* css global */
+* {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.h2uppercase {
+    text-transform: uppercase;
+}
+
+.hblue {
+    color: #27697c;
+}
+
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
+
+p {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+}
+
+.pmajuscule {
+    text-transform: uppercase;
+}
+
+label {
+    font-family: "Open Sans";
+}
+
+.buttonwhite {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    background: white;
+    color: #27697c;
+    padding:12px 24px;
+    display: inline-block;
+    width: fit-content;
+    font-family: "Roboto";
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.buttonwhite:hover {
+    color: white;
+    background: #27697c;   
+    border: 1px solid white;
+    background-color: transparent;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.buttonblue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #27697c ;
+    color: white;
+    padding:12px 24px;
+    display: inline-block;
+    width: fit-content;
+    font-family: "Roboto";
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.buttonblue:hover {
+    background: white;
+    color: #27697c;   
+    border: 1px solid #27697c;
+    background-color: transparent;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.petittraittop {
+    margin-top: 20px;
+    max-width: 40px;
+    height: 0px;
+    font-weight: 400;
+    color: #27697c;
+    border-top: solid 2px #27697c;
+}
+/* fin css global */
+
+/* début css header */
+
+header {
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.burger-icon {
+    visibility: hidden;
+}
+
+header ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+header nav a {
+    padding: 43px 24px;
+    font-weight: 400;
+    font-size: 16px;   
+    font-family: "Open Sans";
+    width: min-content;
+    text-transform: uppercase;
+}
+
+header li a:hover {
+    background-color: #27697c;
+    transition : 0.3s;
+    color: white;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+/* fin css header */
+
+
+
+/* début css main */
+
+/* début css section1 */
+#section1 {
+    height: 800px;
+    background-size: cover;
+    background-image: url(../img/bureaumalmaison.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+}
+
+#section1 article {
+    max-width: 600px;
+    background: #27697CE3;
+    margin: auto;
+    color: white;
+}
+
+
+#section1 article p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* début css section 2 */
+#section2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+#article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#textearticle {
+    max-width: 640px;
+}
+
+#article img {
+    max-width: 720px;
+    max-height: 654px;
+    object-fit: cover;
+}
+
+#textearticlepetittraitarticle2 {
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 40px;
+}
+
+#article p {
+    line-height: 32px;
+}
+/* début css sous section 2 */
+#soussection2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    text-align: center;
+    object-fit: cover;
+}
+
+#soussection2 i {
+    color: #27697c;
+    font-size: 63px;
+}
+
+#soussection2 p {
+    font-weight: 600;
+}
+
+/* fin css sous section 2*/
+
+/* début css section 3 */
+#section3color {
+    background-color: #27697c;
+}
+
+#section3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+#section3 article {
+    max-width: 640px;
+}
+
+#section3 p {
+    line-height: 32px;
+}
+
+#imagesection2x2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#imagesection2x2x2 img {
+    max-width: 340px;
+    height: 226.66px;
+    object-fit: cover;
+}
+
+.imagesection3x1 {
+    margin-top: 20px;
+    width: 700px;
+    height: 226.66px;
+    object-fit: cover;
+}
+/* fin css section 3 */
+
+/* début css section 4 */
+#section4 {
+    padding-top: 200px;
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#section4 img {
+    max-width: 387px;
+}
+
+#section4image {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 30px;
+}
+/* fin css section 4 */
+
+/* début css section 5 */
+#section5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #859399;
+}
+
+#section5>div {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+}
+
+#section5 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#section5 form>input {
+    height: 40px;
+}
+
+#section5 input::placeholder {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+#section5 textarea::placeholder {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+#entreprise {
+    display: grid;
+    grid-column: 1/3;
+}
+
+#section5 textarea {
+    height: 85px;
+    display: grid;
+    grid-column: 1/3;    
+}
+
+#section5 label {
+    grid-column: 1/3;
+}
+
+
+
+/* fin css section 5 */
+
+
+
+/* début css footer */
+footer {
+    background-color: #27697c;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Roboto";
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #859399;
+}
+/* fin css footer */
+
+
+/* début css 1024px max */
+@media only screen and (max-width: 1024px) {
+
+
+
+    /* Début CSS Header */
+    header {
+        max-width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+    }
+
+    .burger-icon span {
+        visibility: visible;
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #27697c;
+        margin: 6px 0;
+      }
+
+    header nav ul {
+        display: none;
+    }
+    /* Fin CSS Header */
+
+    /* Début CSS Section 1 */
+
+    #section1 {
+        height: 700px;
+    }
+
+    /* Début CSS Section 2 */
+    #section2 {
+        max-width: 100%;
+    }
+    #article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #textearticle {
+        max-width: 100%;
+    }
+
+    #article img {
+        width: 100%;
+        margin: auto;
+    }
+    #soussection2 {
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
+    }
+    /* FIN CSS Sectin 2 */
+    
+    /* Début CSS Section 3 */
+    #section3 {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    #section3 article {
+        padding-left: 80px;
+        max-width: 100%;
+    }
+    #section3>div {
+        display: none;
+    }
+    #section3 article {
+        max-width: 100%;
+    }
+    /* FIN CSS Section 3 */
+    
+    /* Début CSS Section4 */
+    #section4 {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        max-width: 80%;
+    }    
+    /* FIN CSS Section4 */
+
+    /* Début CSS Section5 */
+    #section5 {
+        max-width: 100%;
+    }
+
+    #section5 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    }
+
+/* début css 480px */
+@media only screen and (max-width: 480px) {
+
+        .buttonblue {
+            max-width: 75%;
+        }
+
+        .buttonwhite {
+            max-width: 80%;
+        }
+
+        #section3 article {
+            padding-left: 10px;
+        }
+
+        #section4image {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #soussection2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        #section5 form{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #entreprise {
+            display: grid;
+            grid-column: 1/1;
+        }
+        
+        #section5 textarea {
+            display: grid;
+            grid-column: 1/1;    
+        }
+        
+        #section5 label {
+            grid-column: 1/1;
+        }
+    }
+    
+
+    
+    
