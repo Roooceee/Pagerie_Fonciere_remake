@@ -66,6 +66,7 @@ label {
     font-family: "Roboto";
     border: 1px solid #fff;
     text-decoration: none;
+    text-align: center;
 }
 
 .buttonwhite:hover {
@@ -90,6 +91,7 @@ label {
     font-family: "Roboto";
     border: 1px solid #fff;
     text-decoration: none;
+    text-align: center;
 }
 
 .buttonblue:hover {
@@ -117,7 +119,7 @@ header {
     margin: auto;
     max-width: 1440px;
     display: flex;
-    justify-content: center;   
+    justify-content: space-between;   
     align-items: center;
 }
 
@@ -254,6 +256,7 @@ header a {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     color: white;
 }
@@ -266,13 +269,13 @@ header a {
     line-height: 32px;
 }
 
-#imagesection2x2x2 {
+#imagesection2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-#imagesection2x2x2 img {
+#imagesection2x2 img {
     max-width: 340px;
     height: 226.66px;
     object-fit: cover;
@@ -352,7 +355,8 @@ header a {
 #section5 textarea {
     height: 85px;
     display: grid;
-    grid-column: 1/3;    
+    grid-column: 1/3;
+    resize: none;    
 }
 
 #section5 label {
@@ -371,6 +375,7 @@ footer {
     background-size: cover;
     color: white;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 footer p {
@@ -396,15 +401,9 @@ footer a:hover {
 /* début css 1024px max */
 @media only screen and (max-width: 1024px) {
 
-
-
     /* Début CSS Header */
     header {
         max-width: 95%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;   
-        align-items: center;
     }
 
     .burger-icon span {
@@ -431,9 +430,10 @@ footer a:hover {
     #section2 {
         max-width: 100%;
     }
-    #article {
+    #section2 > article {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 40px;
     }
 
     #textearticle {
@@ -449,9 +449,10 @@ footer a:hover {
         justify-content: space-around;
         gap: 0;
     }
-    /* FIN CSS Sectin 2 */
+    /* FIN CSS Section 2 */
     
     /* Début CSS Section 3 */
+
     #section3 {
         max-width: 100%;
         display: grid;
@@ -459,7 +460,7 @@ footer a:hover {
         margin: 0;
     }
     #section3 article {
-        padding-left: 80px;
+        padding: 40px;
         max-width: 100%;
     }
     #section3>div {
@@ -490,18 +491,34 @@ footer a:hover {
     }
 
 /* début css 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
+
+        h3 {
+            padding-bottom: 40px;
+        }
+
+        #textearticlepetittraitarticle2 {
+            grid-template-columns: 1fr;
+        }
+
+        #textearticlepetittraitarticle2 > hr {
+            display: none;
+        }
 
         .buttonblue {
+            display: grid;
+            margin: 20px auto;
             max-width: 75%;
         }
 
         .buttonwhite {
+            display: grid;
+            margin: 20px auto;
             max-width: 80%;
         }
 
-        #section3 article {
-            padding-left: 10px;
+        #section3 {
+            padding-bottom: 0;
         }
 
         #section4image {
