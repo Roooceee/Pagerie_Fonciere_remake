@@ -22,4 +22,3 @@ Ce projet m’a permis de consolider mes compétences en **HTML** et **CSS**, no
 ## 📁 Structure
 
 Ce projet est 100% statique, sans JavaScript.  
-Tous les fichiers sont organisés pour une lecture et une maintenance faciles.
